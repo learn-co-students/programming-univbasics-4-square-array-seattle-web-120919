@@ -1,4 +1,10 @@
+
 def square_array(array)
-  numbers = [1,2,3]
-  numbers.each do ^2
+  squared = []
+  count = 0
+  while count < array.size do
+    squared << (array[count] ** 2)
+    count = count + 1
+  end
+  squared
 end
